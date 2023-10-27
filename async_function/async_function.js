@@ -8,5 +8,6 @@ async function fetchResponse(url) {
 // to get the response you need to use await here as well
 // ... but you can't use await here in js code
 // ... there must be some other ways
-let resp = fetchResponse('https://dog.ceo/api/breed/hound/list');
+// ... it's throwing syntax error
+let resp = await fetchResponse('https://dog.ceo/api/breed/hound/list');
 console.log(resp)
