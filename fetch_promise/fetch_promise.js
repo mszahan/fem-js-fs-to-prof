@@ -16,7 +16,7 @@ async function dog(){
     // it returns pending promise so used await to make it fulfiled
     let response = await fetch('https://dog.ceo/api/breed/hound/list');
     // this also returns peding promise to make it work you need await
-    body = await response.json()
+    let body = await response.json()
     console.log(body)
 }
 
